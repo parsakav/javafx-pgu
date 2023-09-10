@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parsakav.pgukala.controller.SignupController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="439.0" prefWidth="310.0" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label prefHeight="35.0" prefWidth="125.0" text="Pgu Signup">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.78847736120224" green="0.20679011940956116" blue="1.0" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.3558858633041382" green="0.05685510113835335" blue="0.4385964870452881" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                    <VBox.margin>
+                        <Insets bottom="25.0" />
+                    </VBox.margin>
+                </Label>
+                <MFXTextField fx:id="phoneNumber" floatMode="ABOVE" prefHeight="37.0" prefWidth="194.0" promptText="Phone Number">
+                    <VBox.margin>
+                        <Insets bottom="1.0" />
+                    </VBox.margin>
+                </MFXTextField>
+            <MFXTextField fx:id="username" floatMode="ABOVE" layoutX="68.0" layoutY="114.0" prefHeight="37.0" prefWidth="194.0" promptText="Username" />
+            <MFXPasswordField fx:id="pass" floatMode="ABOVE" layoutX="68.0" layoutY="214.0" prefHeight="37.0" prefWidth="194.0" promptText="Password" />
+                <MFXPasswordField fx:id="reenterpass" floatMode="ABOVE" prefHeight="37.0" prefWidth="194.0" promptText="Re-Enter Password">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </MFXPasswordField>
+                <Hyperlink onAction="#loginPageClickAction" text="Have you any accounts? Login">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin></Hyperlink>
+                <HBox alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="259.0">
+                    <children>
+                        <MFXButton fx:id="signupBtn" buttonType="RAISED" defaultButton="true" onAction="#signupBtnClickAction" prefHeight="29.0" prefWidth="70.0" rippleAnimationSpeed="0.5" style="-fx-background-color: #8e24aa;" text="Signup" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </MFXButton>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

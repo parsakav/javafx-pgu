@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="241.0" minWidth="243.0"   prefHeight="241.0" prefWidth="243.0" spacing="10" style="-fx-background-color: transparent; -fx-background-radius: 30; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="title" alignment="CENTER" minWidth="243" prefHeight="70.0" style="-fx-background-color: #3D4956; -fx-background-radius: 30; -fx-border-radius: 30;" text="salam" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+        <HBox fx:id="st" alignment="TOP_CENTER" prefWidth="282.0" style="-fx-background-color: #3D4956; -fx-background-radius: 30;" VBox.vgrow="ALWAYS">
+               <VBox spacing="20">
+                <children>
+                    <ImageView fx:id="stuffIcon" fitHeight="99.0" fitWidth="98.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/ex.jpeg" />
+                        </image>
+                    </ImageView>
+                    <MFXButton fx:id="buy" buttonType="RAISED" defaultButton="true" onAction="#buyBtnClickAction" prefHeight="30.0" prefWidth="98.0" rippleAnimationSpeed="0.5" style="-fx-background-color: #8e24aa;" text="Buy" textFill="WHITE">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+
+                    </MFXButton>
+                </children>
+        </VBox>
+        </HBox>
+    </children>
+</VBox>

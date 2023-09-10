@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parsakav.pgukala.controller.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="310.0" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="117.0" text="Pgu Login">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.78847736120224" green="0.20679011940956116" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.3558858633041382" green="0.05685510113835335" blue="0.4385964870452881" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </Label>
+            <MFXTextField fx:id="username" floatMode="ABOVE" prefHeight="37.0" prefWidth="194.0" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </MFXTextField>
+            <MFXPasswordField fx:id="pass" floatMode="ABOVE" prefHeight="37.0" prefWidth="194.0" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </MFXPasswordField>
+            <Hyperlink onAction="#signupPageClickAction" text="Don't have any account? sign up">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Hyperlink>
+            <HBox alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="259.0">
+               <children>
+                  <MFXButton fx:id="login" buttonType="RAISED" defaultButton="true" onAction="#loginBtnClickAction" prefHeight="26.0" prefWidth="62.0" rippleAnimationSpeed="0.5" style="-fx-background-color: #8e24aa;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+
+                  </MFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="60.0" right="60.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

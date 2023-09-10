@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import com.dlsc.formsfx.view.controls.SimpleBooleanControl?>
+
+<MFXScrollPane  VBox.vgrow="ALWAYS"
+               xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+<VBox  fx:id="stuffbox" prefHeight="650.0" prefWidth="260.0" spacing="10"   xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+
+
+
+
+
+</VBox>
+</MFXScrollPane>
+
